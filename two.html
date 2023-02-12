@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-12">two pages in heres <span class="font-semibold  text-red-600	">bank site!!</span></h1>
+    </header>
+    <main>
+        <section class="mt-12 w-9/12 mx-auto">
+            <div class="grid grid-cols-3 gap-4 ">
+                <div class="bg-red-500 p-4 rounded-lg">
+                    <h3 class="text-2xl text-white">deposit</h3>
+                    <h4 class="text-xl">$<span id="total-deposit">00</span> </h4>
+                </div>
+                <div class="bg-sky-500 p-4 rounded-lg ">
+                    <h3 class="text- text-white">withdraw</h3>
+                    <h4 class="text-xl font-medium">$<span id="withdra">00</span> </h4>
+                </div>
+                <div class="bg-yellow-500 p-4 rounded-lg">
+                    <h3 class="text-2xl text-white">Balance</h3>
+                    <h4 class="text-xl font-medium">$<span id="balance">1200</span> </h4>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-12 w-9/12 mx-auto">
+            <div class="grid grid-cols-2 gap-4 ">
+                <div class="bg-red-700 p-4 rounded-lg">
+                    <h3 class="text- text-white">please add deposit</h3>
+                    <input class=" rounded-lg w-9/12 block my-4 px-3 py-2" type="text" name="" id="user-deposit" placeholder="$ please add your deposit">
+                    <button class="px-4 py-2 bg-red-500 rounded-lg hover:bg-sky-500" id="deposit"> Add deposit enter</button>
+                </div>
+                <div class="bg-sky-700 p-4 rounded-lg ">
+                    <h3 class="text-2xl text-white">Your's withdraw</h3>
+                    <input class=" rounded-lg w-9/12 block my-4 px-3 py-2 " type="text" name="" id="user-withdrow" placeholder="$ please sub your balance">
+                    <button class="px-4 py-2 bg-red-500 rounded-lg hover:bg-sky-500" id="withdraw">sub balance</button>
+
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+    <script src="two.js">
+    </script>
+</body>
+</html>
